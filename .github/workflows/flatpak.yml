@@ -3,10 +3,10 @@ name: Flatpak (Experimental)
 on:
   push:
     paths-ignore: ['**.md']
-    branches: [master]
+    branches: [disabled-master]
   pull_request:
     paths-ignore: ['**.md']
-    branches: [master]
+    branches: [disabled-master]
 
 env:
   TWITCH_CLIENTID: ${{ secrets.TWITCH_CLIENT_ID }}
