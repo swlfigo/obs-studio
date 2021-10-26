@@ -90,7 +90,8 @@ static void set_psycho_aq(struct nvenc_encoder *enc, bool psycho_aq)
 	av_opt_set_int(enc->context->priv_data, "temporal-aq", psycho_aq, 0);
 }
 
-static bool nvenc_init_codec(struct nvenc_encoder *enc, bool psycho_aq)
+static bool nvenc_init_codec(struct nvenc_encoder *enc,
+			     bool psycho_aq OBS_UNUSED)
 {
 	int ret;
 
